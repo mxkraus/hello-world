@@ -1,0 +1,42 @@
+.card-container {
+  position: absolute;
+  top: 55px;
+  left: 10%;
+}
+
+.card {
+  position: absolute;
+  width: 500px;
+  height: 280px;
+  border-radius: 0;
+  text-align: center;
+  line-height: 280px;
+  font-size: 40px;
+  font-family: sans-serif;
+  opacity: 1;
+  transition: 0.5s transform ease-out, 0.5s background-color linear,
+    0.5s opacity linear;
+}
+.card.bottom {
+  z-index: 1;
+  background-color: #b2b2b2;
+  border: 1px solid #666;
+  transform: translateY(0) rotate(1deg);
+}
+.card.mid {
+  z-index: 2;
+  background-color: #f8f8f8;
+  border: 1px solid #666;
+  transform: translateY(0) rotate(2deg);
+}
+.card.top {
+  z-index: 3;
+  background-color: #fff;
+  border: 1px solid #666;
+  transform: translateY(0) rotate(-1deg);
+}
+
+.trigger {
+  transform: translateY(300px) !important;
+  z-index: 1;
+}
